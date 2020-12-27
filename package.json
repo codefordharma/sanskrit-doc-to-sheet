@@ -1,0 +1,33 @@
+{
+  "name": "sanskrit-doc-to-sheet",
+  "version": "1.0.0",
+  "description": "Description: This repo is for converting .txt file of Sanskrit literature (shlokas) to .csv file so that we can work on Google Sheet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write --ignore-unknown ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefordharma/sanskrit-doc-to-sheet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codefordharma/sanskrit-doc-to-sheet/issues"
+  },
+  "homepage": "https://github.com/codefordharma/sanskrit-doc-to-sheet#readme",
+  "devDependencies": {
+    "husky": "4.3.6",
+    "lint-staged": "10.5.3",
+    "prettier": "2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
